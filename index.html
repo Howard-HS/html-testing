@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      #header {
+        margin: 10px;
+        padding: 10px;
+        position: relative;
+      }
+
+      #message {
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 10px;
+        padding: 20px;
+        background: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="header">This is a div</div>
+    <div id="message">This is a div</div>
+
+    <script>
+      window.header.addEventListener('mouseover', () => {
+        window.message.style.display = 'inline'
+      })
+
+      window.header.addEventListener('mouseleave', () => {
+        window.message.style.display = 'none'
+      })
+    </script>
+  </body>
+</html>
